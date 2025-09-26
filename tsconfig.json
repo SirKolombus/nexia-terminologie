@@ -12,7 +12,9 @@
     "lib": [
       "es2015",
       "dom"
-    ]
+    ],
+    "forceConsistentCasingInFileNames": true,
+    "strict": true
   },
   "exclude": [
     "node_modules",
