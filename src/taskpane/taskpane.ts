@@ -267,7 +267,8 @@ function showTerminologyModal(entry: TerminologyEntry): void {
     modalExamples.innerHTML = "";
     entry.examples.forEach(example => {
       const li = document.createElement("li");
-      li.textContent = example;
+      // If the example contains a URL, make it clickable
+      li.innerHTML = convertUrlsToLinks(example);
       modalExamples.appendChild(li);
     });
     modalExamplesSection.style.display = "block";
