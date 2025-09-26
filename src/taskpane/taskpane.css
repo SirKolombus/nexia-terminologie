@@ -1,3 +1,28 @@
+/* Terminology Links */
+.terminology-link {
+    color: #0078d4;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    word-break: break-all;
+    display: inline-block;
+    margin: 2px 0;
+}
+
+.terminology-link:hover {
+    color: #106ebe;
+    text-decoration: underline;
+    border-bottom-color: #106ebe;
+}
+
+.terminology-link:focus {
+    outline: 1px solid #0078d4;
+}
+
+/* Utility Classes */
+.hidden {
+    display: none !important;
+}
+
 /* Terminology Add-in CSS Styles */
 
 html,
@@ -16,6 +41,7 @@ ul {
 
 .ms-terminology {
     display: flex;
+    -ms-flex-direction: column;
     flex-direction: column;
     height: 100vh;
 }
@@ -24,8 +50,8 @@ ul {
 .ms-terminology__header {
     padding: 16px 20px;
     display: flex;
+    -ms-flex-align: center;
     align-items: center;
-    gap: 12px;
     border-bottom: 1px solid #e1e1e1;
     flex-shrink: 0;
     background: linear-gradient(135deg, #1CB5A6 0%, #0F9688 100%);
@@ -34,6 +60,7 @@ ul {
 .ms-terminology__header img {
     width: 32px;
     height: 32px;
+    margin-right: 12px;
 }
 
 .ms-terminology__header h1 {
@@ -44,11 +71,13 @@ ul {
 
 /* Main Content */
 .ms-terminology__main {
+    -ms-flex: 1;
     flex: 1;
     padding: 16px 20px;
     overflow-y: auto;
     background-color: #ffffff;
     display: flex;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -61,6 +90,7 @@ ul {
 .ms-SearchBox {
     position: relative;
     display: flex;
+    -ms-flex-align: center;
     align-items: center;
     border-bottom: 2px solid #1CB5A6;
     padding: 8px 0;
@@ -68,6 +98,7 @@ ul {
 }
 
 .ms-SearchBox-field {
+    -ms-flex: 1;
     flex: 1;
     border: none;
     outline: none;
@@ -131,6 +162,7 @@ ul {
 /* Terminology Tree */
 .terminology-tree {
     width: 100%;
+    -ms-flex: 1;
     flex: 1;
 }
 
@@ -151,8 +183,8 @@ ul {
     background-color: #f8f9fa;
     cursor: pointer;
     display: flex;
+    -ms-flex-align: center;
     align-items: center;
-    gap: 8px;
     transition: background-color 0.2s ease;
     border: none;
 }
@@ -170,6 +202,7 @@ ul {
     transition: transform 0.2s ease;
     color: #1CB5A6;
     font-weight: bold;
+    margin-right: 8px;
 }
 
 .category-name {
@@ -196,8 +229,8 @@ ul {
     background-color: #ffffff;
     cursor: pointer;
     display: flex;
+    -ms-flex-align: center;
     align-items: center;
-    gap: 8px;
     transition: background-color 0.2s ease;
 }
 
@@ -216,8 +249,8 @@ ul {
     padding: 8px 16px 8px 48px;
     cursor: pointer;
     display: flex;
+    -ms-flex-align: center;
     align-items: center;
-    gap: 8px;
     transition: background-color 0.2s ease;
     border-bottom: 1px solid #f8f8f8;
     background-color: #ffffff;
@@ -249,7 +282,9 @@ ul {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
     display: flex;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-align: center;
     align-items: center;
     z-index: 1000;
 }
@@ -268,7 +303,9 @@ ul {
     padding: 20px;
     border-bottom: 1px solid #e1e1e1;
     display: flex;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-align: start;
     align-items: flex-start;
 }
 
@@ -276,6 +313,7 @@ ul {
     margin: 0;
     color: #2d3436;
     font-weight: 600;
+    -ms-flex: 1;
     flex: 1;
     padding-right: 16px;
 }
@@ -337,8 +375,13 @@ ul {
 /* Related Terms */
 .related-terms {
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    gap: 8px;
+}
+
+.related-terms .related-term-btn {
+    margin-right: 8px;
+    margin-bottom: 8px;
 }
 
 .related-term-btn {

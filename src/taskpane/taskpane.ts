@@ -215,14 +215,26 @@ function setupModal(): void {
   if (!modal || !modalClose) return;
 
   modalClose.addEventListener("click", () => {
-    modal.style.display = "none";
+    modal.classList.add("hidden");
   });
 
   // Close modal when clicking outside
   modal.addEventListener("click", (e) => {
     if (e.target === modal) {
-      modal.style.display = "none";
+      modal.classList.add("hidden");
     }
+  });
+}
+
+function convertUrlsToLinks(text: string): string {
+  // Regex pro detekci URL (HTTP, HTTPS, a SharePoint odkazy)
+  const urlRegex = /(https?:\/\/[^\s<>"{}|\\^`[\]]+)/g;
+  
+  return text.replace(urlRegex, (url) => {
+    // Zkrácený text pro zobrazení (max 50 znaků)
+    const displayText = url.length > 50 ? url.substring(0, 47) + '...' : url;
+    
+    return `<a href="${url}" target="_blank" rel="noopener noreferrer" class="terminology-link">${displayText}</a>`;
   });
 }
 
@@ -240,11 +252,11 @@ function showTerminologyModal(entry: TerminologyEntry): void {
   if (!modal || !modalTitle || !modalDefinition) return;
 
   modalTitle.textContent = entry.term;
-  modalDefinition.textContent = entry.definition;
+  modalDefinition.innerHTML = convertUrlsToLinks(entry.definition);
 
   // Handle description
   if (entry.description && modalDescription && modalDescriptionSection) {
-    modalDescription.textContent = entry.description;
+    modalDescription.innerHTML = convertUrlsToLinks(entry.description);
     modalDescriptionSection.style.display = "block";
   } else if (modalDescriptionSection) {
     modalDescriptionSection.style.display = "none";
@@ -283,5 +295,5 @@ function showTerminologyModal(entry: TerminologyEntry): void {
     modalRelatedSection.style.display = "none";
   }
 
-  modal.style.display = "flex";
+  modal.classList.remove("hidden");
 }
