@@ -34,6 +34,18 @@ export interface TerminologyTree {
 export const terminologyData: TerminologyTree = {
   categories: [
     {
+      id: "basic-links",
+      name: "Důležité odkazy",
+      entries: [
+        {
+          id: "Metodika 2025-2026",
+          term: "Metodika 2025-2026",
+          definition: "https://nexiaprague.sharepoint.com/:f:/s/SHP_D1/EidzB_6faIxPnQi6FDX8lzcBKCcv1uw_I39cSACuOBNXOA?e=sXfqpS",
+          category: "basic-links"
+        }
+      ]
+    },
+    {
       id: "audit-concepts",
       name: "Auditní koncepty",
       subcategories: [
