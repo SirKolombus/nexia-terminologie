@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="cs">
 
 <head>
     <meta charset="UTF-8" />
@@ -24,22 +24,22 @@
     </header>
     
     <section id="sideload-msg" class="ms-terminology__main">
-        <h2 class="ms-font-xl">Prosím <a target="_blank" href="https://learn.microsoft.com/office/dev/add-ins/testing/test-debug-office-add-ins#sideload-an-office-add-in-for-testing">načtěte</a> váš doplněk pro zobrazení obsahu.</h2>
+        <h2 class="ms-font-xl">Prosím <a target="_blank" rel="noopener noreferrer" href="https://learn.microsoft.com/office/dev/add-ins/testing/test-debug-office-add-ins#sideload-an-office-add-in-for-testing">načtěte</a> váš doplněk pro zobrazení obsahu.</h2>
     </section>
     
-    <main id="app-body" class="ms-terminology__main" style="display: none;">
+    <main id="app-body" class="ms-terminology__main">
         <!-- Search Section -->
         <div class="search-container">
             <div class="ms-SearchBox ms-SearchBox--underlined">
                 <input class="ms-SearchBox-field" type="text" id="search-input" placeholder="Vyhledat termín..." />
-                <button class="ms-SearchBox-closeButton" id="search-clear" style="display: none;">
+                <button class="ms-SearchBox-closeButton" id="search-clear" title="Vymazat hledání" aria-label="Vymazat hledání">
                     <i class="ms-Icon ms-Icon--Clear"></i>
                 </button>
             </div>
         </div>
 
         <!-- Search Results -->
-        <div id="search-results" class="search-results" style="display: none;">
+        <div id="search-results" class="search-results">
             <h3 class="ms-font-m-plus">Výsledky vyhledávání:</h3>
             <div id="search-results-list"></div>
         </div>
@@ -52,11 +52,11 @@
     </main>
 
     <!-- Modal for terminology details -->
-    <div id="terminology-modal" class="modal-overlay" style="display: none;">
+    <div id="terminology-modal" class="modal-overlay hidden">
         <div class="modal-content">
             <div class="modal-header">
                 <h2 id="modal-title" class="ms-font-xl"></h2>
-                <button id="modal-close" class="modal-close-btn">
+                <button id="modal-close" class="modal-close-btn" aria-label="Zavřít" title="Zavřít">
                     <i class="ms-Icon ms-Icon--Cancel"></i>
                 </button>
             </div>
@@ -65,15 +65,15 @@
                     <h4 class="ms-font-m-plus">Definice:</h4>
                     <p id="modal-definition" class="ms-font-m"></p>
                 </div>
-                <div id="modal-description-section" class="term-description" style="display: none;">
+                <div id="modal-description-section" class="term-description">
                     <h4 class="ms-font-m-plus">Podrobný popis:</h4>
                     <p id="modal-description" class="ms-font-m"></p>
                 </div>
-                <div id="modal-examples-section" class="term-examples" style="display: none;">
+                <div id="modal-examples-section" class="term-examples hidden">
                     <h4 class="ms-font-m-plus">Příklady:</h4>
                     <ul id="modal-examples" class="ms-font-m"></ul>
                 </div>
-                <div id="modal-related-section" class="term-related" style="display: none;">
+                <div id="modal-related-section" class="term-related">
                     <h4 class="ms-font-m-plus">Související termíny:</h4>
                     <div id="modal-related" class="related-terms"></div>
                 </div>
