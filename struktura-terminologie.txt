@@ -1,0 +1,113 @@
+STRUKTURA TERMINOLOGIE - NÁVOD PRO PŘIDÁVÁNÍ NOVÝCH DEFINIC
+================================================================
+
+ZÁKLADNÍ STRUKTURA:
+==================
+
+terminologyData
+├── categories (kategorie)
+    ├── id: "audit-concepts" 
+    │   name: "Auditní koncepty"
+    │   ├── subcategories (podkategorie)
+    │   │   ├── id: "audit-types"
+    │   │   │   name: "Typy auditů"
+    │   │   │   └── entries (položky/definice)
+    │   │   └── id: "audit-opinions"
+    │   │       name: "Auditorské výroky"
+    │   │       └── entries
+    │   └── entries (volitelné - můžou být i přímo v kategorii)
+    │
+    ├── id: "risk-assessment"
+    │   name: "Posouzení rizik"
+    │   └── subcategories
+    │       └── id: "risk-types"
+    │           name: "Typy rizik"
+    │           └── entries
+    │
+    └── id: "financial-statements"
+        name: "Účetní výkazy"
+        └── subcategories
+            └── id: "primary-statements"
+                name: "Základní výkazy"
+                └── entries
+
+STRUKTURA JEDNÉ DEFINICE (TerminologyEntry):
+===========================================
+
+{
+  id: "unique-identifier",              // POVINNÉ - unikátní ID (kebab-case)
+  term: "Název termínu",                // POVINNÉ - název termínu
+  definition: "Krátká definice",        // POVINNÉ - hlavní definice
+  description: "Rozšířený popis",       // VOLITELNÉ - delší vysvětlení
+  examples: [                           // VOLITELNÉ - příklady použití
+    "Příklad 1",
+    "Příklad 2"
+  ],
+  relatedTerms: [                       // VOLITELNÉ - související termíny (odkazy na ID)
+    "related-term-id-1",
+    "related-term-id-2"
+  ],
+  category: "audit-concepts",           // POVINNÉ - ID kategorie
+  subcategory: "audit-types"            // VOLITELNÉ - ID podkategorie
+}
+
+AKTUÁLNÍ KATEGORIE A PODKATEGORIE:
+==================================
+
+1. "audit-concepts" (Auditní koncepty)
+   └── "audit-types" (Typy auditů)
+   └── "audit-opinions" (Auditorské výroky)
+
+2. "risk-assessment" (Posouzení rizik)
+   └── "risk-types" (Typy rizik)
+
+3. "financial-statements" (Účetní výkazy)
+   └── "primary-statements" (Základní výkazy)
+
+NÁVOD PRO PŘIDÁNÍ NOVÉ DEFINICE:
+================================
+
+1. NAJDI SPRÁVNOU KATEGORII/PODKATEGORII
+   - Pokud neexistuje, vytvoř novou
+
+2. VYTVOŘ NOVOU ENTRY V POLI "entries":
+   {
+     id: "nove-id",                     // Unikátní kebab-case ID
+     term: "Nový termín",
+     definition: "Definice termínu",
+     description: "Volitelný rozšířený popis",
+     examples: ["Příklad 1", "Příklad 2"],
+     relatedTerms: ["id-souvisejiciho-terminu"],
+     category: "kategorie-id",
+     subcategory: "podkategorie-id"    // pokud je v podkategorii
+   }
+
+3. PŘIDEJ ČÁRKU za předchozí entry (JSON syntax)
+
+TIPY:
+=====
+- ID používej v kebab-case (malá písmena, pomlčky)
+- Termíny v češtině
+- Definition = krátká, stručná definice
+- Description = rozšířený popis s více detaily
+- Examples = praktické příklady
+- RelatedTerms = ID jiných souvisejících termínů
+
+PŘÍKLAD PŘIDÁNÍ NOVÉHO TERMÍNU:
+===============================
+
+Do subcategory "audit-types" přidat:
+
+{
+  id: "operational-audit",
+  term: "Operační audit",
+  definition: "Audit zaměřený na hodnocení efektivnosti a účinnosti operací.",
+  description: "Operační audit posuzuje, jak efektivně organizace využívá své zdroje k dosažení stanovených cílů.",
+  examples: [
+    "Audit výrobního procesu",
+    "Audit zákaznického servisu"
+  ],
+  relatedTerms: ["financial-audit", "compliance-audit"],
+  category: "audit-concepts",
+  subcategory: "audit-types"
+},
