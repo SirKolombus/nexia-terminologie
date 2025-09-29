@@ -54,6 +54,9 @@ ul {
     align-items: center;
     border-bottom: 1px solid #e1e1e1;
     flex-shrink: 0;
+    background: -webkit-linear-gradient(135deg, #1CB5A6 0%, #0F9688 100%);
+    background: -moz-linear-gradient(135deg, #1CB5A6 0%, #0F9688 100%);
+    background: -o-linear-gradient(135deg, #1CB5A6 0%, #0F9688 100%);
     background: linear-gradient(135deg, #1CB5A6 0%, #0F9688 100%);
 }
 
@@ -374,17 +377,16 @@ ul {
 
 /* Related Terms */
 .related-terms {
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    display: block;
 }
 
 .related-terms .related-term-btn {
     margin-right: 8px;
+.related-terms .related-term-btn {
+    display: inline-block;
+    margin-right: 8px;
     margin-bottom: 8px;
 }
-
-.related-term-btn {
     font-size: 12px;
     padding: 4px 8px;
     min-height: 24px;

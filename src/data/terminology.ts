@@ -155,12 +155,231 @@ export const terminologyData: TerminologyTree = {
             description: "Základní kapitál je uveden v zakladatelské smlouvě nebo stanovách společnosti.",
             category: "basic-acc",
             subcategory: "basic-acc-basics"
+          },
+          {
+            id: "basic-acc-basics-vn",
+            term: "Výnosy a náklady",
+            definition: "Výnosy představují příjmy společnosti z její hlavní činnosti, zatímco náklady jsou výdaje spojené s provozem společnosti.",
+            description: "Výnosy zahrnují tržby z prodeje zboží nebo služeb, zatímco náklady zahrnují náklady na materiál, mzdy, nájem a další provozní výdaje.",
+            category: "basic-acc",
+            subcategory: "basic-acc-basics"
+          },
+          {
+            id: "basic-acc-basics-bl",
+            term: "Bilanční suma",
+            definition: "Celková hodnota aktiv nebo pasiv společnosti.",
+            description: "Bilanční suma je vždy stejná na straně aktiv i pasiv, což odráží základní účetní rovnost: Aktiva = Pasiva + Vlastní kapitál.",
+            category: "basic-acc",
+            subcategory: "basic-acc-basics"
+          },
+          {
+            id: "basic-acc-basics-uj",
+            term: "Účetní jednotka",
+            definition: "Subjekt, pro který jsou vedeny účetní záznamy - mnohdy používáme při popisování transakce auditované osoby.",
+            description: "Účetní jednotkou může být fyzická osoba, právnická osoba nebo jiný subjekt, který má povinnost vést účetnictví podle zákona.",
+            category: "basic-acc",
+            subcategory: "basic-acc-basics"
+          },
+          {
+            id: "basic-acc-basics-uo",
+            term: "Účetní období",
+            definition: "Časové období, za které jsou sestavovány účetní závěrky.",
+            description: "Účetní období je obvykle jeden rok, ale může být i kratší (např. čtvrtletí nebo pololetí) v závislosti na potřebách účetní jednotky. Účetní období nemusí nutně souhlasit na kalendářní období - v tomto případě hovoříme o hospodářském roce.",
+            category: "basic-acc",
+            subcategory: "basic-acc-basics",
+            examples: [
+              "Kalendářní rok - účetní období od 1. ledna do 31. prosince",
+              "Hospodářský rok - účetní období, které nezačíná 1. ledna a nekončí 31. prosince (např. od 1. dubna do 31. března následujícího roku)",
+              "Účetní období v závislosti na přeměně společnosti - může být kratší či delší než 12 měsíců"
+            ]
+          },
+          {
+            id: "basic-acc-basics-ud",
+            term: "Účetní doklad",
+            definition: "Dokument, který zaznamenává finanční transakci.",
+            description: "Účetní doklad je základním prvkem účetnictví a slouží jako důkaz o provedení transakce.",
+            category: "basic-acc",
+            subcategory: "basic-acc-basics"
           }
-    
         ],
       },
-    ],
-  }
+      {  
+        id: "basic-acc-vykaz",
+        name: "Výkazy a zprávy",
+        entries: [
+          {
+            id: "basic-acc-vykaz-vykaznictvi",
+            term: "Výkaznictví",
+            definition: "Proces sestavování a prezentace finančních výkazů.",
+            description: "Výkaznictví zahrnuje přípravu rozvahy, výkazu zisku a ztráty, přehledu o peněžních tocích a dalších finančních zpráv podle platných účetních standardů které poskytují informace o finanční situaci a výkonnosti společnosti - k vybranému datu nebo za určité období.",
+            category: "basic-acc",
+            subcategory: "basic-acc-vykaz"
+          },
+          {
+            id: "basic-acc-vykaz-roz",
+            term: "Rozvaha",
+            definition: "Finanční výkaz, který poskytuje přehled o aktivech, pasivech a vlastním kapitálu společnosti k určitému datu.",
+            description: "Rozvaha je rozdělena na dvě části: aktiva na jedné straně a pasiva plus vlastní kapitál na druhé straně. Celková hodnota aktiv musí být vždy rovna součtu pasiv a vlastního kapitálu. Vykazované hodnoty nemusí nutně být v účetním formátu, účetní jednotka si stanoví jednotku výkaznictví - v tis. Kč, set tisíc Kč atd.",
+            category: "basic-acc",
+            subcategory: "basic-acc-vykaz"
+          },
+          {
+            id: "basic-acc-vykaz-vzz",
+            term: "Výkaz zisku a ztráty",
+            definition: "Finanční výkaz, který shrnuje výnosy, náklady a zisk nebo ztrátu společnosti za určité období.",
+            description: "Výkaz zisku a ztráty poskytuje informace o tom, jak efektivně společnost generuje zisk ze svých operací. Výkaz může být sestaven ve formátu přehledném nebo kalkulačním.",
+            category: "basic-acc",
+            subcategory: "basic-acc-vykaz"
+          },
+          {
+            id: "basic-acc-vykaz-cf",
+            term: "Přehled o peněžních tocích",
+            definition: "Finanční výkaz, který ukazuje příjmy a výdaje peněžních prostředků společnosti za určité období.",
+            description: "Přehled o peněžních tocích je rozdělen do tří částí: provozní činnost, investiční činnost a finanční činnost. Tento výkaz pomáhá porozumět, jak společnost generuje a využívá peněžní prostředky.",
+            examples: [
+              "Přímá metoda - prostředky jsou sestaveny podle pohybů na bankovních účtech",
+              "Nepřímá metoda - prostředky jsou sestaveny podle zisku a ztráty a úprav o nepeněžní operace"
+            ],
+            category: "basic-acc",
+            subcategory: "basic-acc-vykaz"
+          },
+          {
+            id: "basic-acc-vykaz-att",
+            term: "Příloha účetní závěrky",
+            definition: "Doplňující informace k účetní závěrce, které poskytují podrobnosti o jednotlivých položkách ve výkazech.",
+            description: "Příloha účetní závěrky obsahuje informace o účetních metodách, významných událostech po datu účetní závěrky, podrobnosti o dlouhodobém majetku, závazcích, vlastním kapitálu a další relevantní informace.",
+            category: "basic-acc",
+            subcategory: "basic-acc-vykaz"
+          },
+          {
+            id: "basic-acc-vykaz-vz",
+            term: "Výroční zpráva",
+            definition: "Komplexní zpráva, která shrnuje finanční a provozní výsledky společnosti za uplynulý rok.",
+            description: "Výroční zpráva obvykle obsahuje finanční výkazy, zprávu o činnosti, zprávu auditora a další informace o strategii a plánech společnosti.",
+            category: "basic-acc",
+            subcategory: "basic-acc-vykaz"
+          },
+          {
+            id: "basic-acc-vykaz-ud",
+            term: "Účetní závěrka",
+            definition: "Souhrn finančních výkazů společnosti, který poskytuje přehled o její finanční situaci a výkonnosti za určité období.",
+            description: "Účetní závěrka zahrnuje rozvahu, výkaz zisku a ztráty, přehled o peněžních tocích a přílohu účetní závěrky. Účetní závěrka musí být sestavena v souladu s platnými účetními standardy a předpisy.",
+            category: "basic-acc",
+            subcategory: "basic-acc-vykaz"
+          },
+          {
+            id: "basic-acc-vykaz-za",
+            term: "Zpráva auditora",
+            definition: "Oficiální dokument vydaný auditorem, který obsahuje jeho názor na účetní závěrku společnosti.",
+            description: "Zpráva auditora může být bez výhrad, s výhradou, negativní nebo odmítavá, v závislosti na výsledcích auditu a souladu účetní závěrky s platnými účetními standardy.",
+            category: "basic-acc",
+            subcategory: "basic-acc-vykaz",
+            examples: [
+              "Dělíme na modifikované a nemodifikovanou",
+              "Bez výhrad, nemodifikovaná - účetní závěrka poskytuje věrný a poctivý obraz finanční situace společnosti.",
+              "S výhradou - existují určité oblasti, kde auditor nemůže potvrdit úplnou správnost účetní závěrky.",
+              "Negativní - účetní závěrka neodráží věrně a poctivě finanční situaci společnosti.",
+              "Odmítavá - auditor nebyl schopen získat dostatečné důkazy k vydání názoru na účetní závěrku."
+            ],
+          },
+          {
+            id: "basic-acc-vykaz-zv",
+            term: "Zpráva o vztazích",
+            definition: "Zpráva, která poskytuje informace o vztazích mezi společností a jejími spřízněnými stranami.",
+            description: "Zpráva o vztazích zahrnuje informace o transakcích se spřízněnými stranami, jejich povaze a finančním dopadu na společnost.",
+            category: "basic-acc",
+            subcategory: "basic-acc-vykaz",
+            examples: [
+              "Spřízněné strany mohou zahrnovat mateřskou společnost, dceřiné společnosti, přidružené společnosti, klíčové manažery a jejich rodinné příslušníky.",
+              "Kontrolujeme na registr skutečných majitelů (https://esm.justice.cz/ias/issm/rejstrik) i jiné veřejné zdroje."
+            ],
+          },
+        ],
+      },
+      {
+        id: "basic-acc-docs",
+        name: "Účetní podklady",
+        entries: [
+          {
+            id: "basic-acc-docs-ÚK",
+            term: "Účetní kniha",
+            definition: "Hlavní kniha, kde jsou zaznamenány všechny účetní transakce společnosti.",
+            description: "Účetní kniha slouží jako základní zdroj informací pro sestavení účetní závěrky a dalších finančních výkazů.",
+            category: "basic-acc",
+            subcategory: "basic-acc-docs",
+            examples: [
+            "Účetní deník - chronologický záznam všech účetních transakcí",
+            "Hlavní kniha - systematický záznam všech účetních transakcí podle jednotlivých účtů",
+            "Analytické a syntetické evidence - podrobné záznamy o jednotlivých položkách aktiv, pasiv, nákladů a výnosů",
+            "Kniha podrozvahových účtů - záznamy o položkách, které nejsou zahrnuty v hlavní knize, ale jsou důležité pro finanční řízení společnosti"
+          ],
+        },
+        {
+          id: "basic-acc-docs-kf",
+          term: "Kniha faktur",
+          definition: "Záznam všech přijatých a vydaných faktur společnosti.",
+          description: "Kniha faktur slouží k evidenci pohledávek a závazků společnosti a je důležitým podkladem pro účetní záznamy.",
+          category: "basic-acc",
+          subcategory: "basic-acc-docs",
+          examples: [
+            "Přijaté faktury - faktury, které společnost obdržela od svých dodavatelů za zboží nebo služby",
+            "Vydané faktury - faktury, které společnost vystavila svým zákazníkům za zboží nebo služby"
+          ],
+        },
+        {
+          id: "basic-acc-docs-km",
+          term: "Kniha majetku",
+          definition: "Záznam o veškerém dlouhodobém majetku společnosti.",
+          description: "Kniha majetku obsahuje informace o pořízení, odpisování a vyřazování dlouhodobého majetku.",
+          category: "basic-acc",
+          subcategory: "basic-acc-docs",
+          examples: [
+            "Dlouhodobý hmotný majetek - budovy, stroje, zařízení",
+            "Dlouhodobý nehmotný majetek - software, patenty, licence",
+            "Dlouhodobý finanční majetek - investice do jiných společností, cenné papíry",
+            "Dlouhodobý drobný majetek - menší položky dlouhodobého majetku, které jsou evidovány samostatně"
+          ],
+        },
+        {
+          id: "basic-acc-docs-ks",
+          term: "Kniha skladu",
+          definition: "Záznam o veškerém zboží a materiálu na skladě společnosti.",
+          description: "Kniha skladu obsahuje informace o pohybu zboží a materiálu, jejich množství a hodnotě.",
+          category: "basic-acc",
+          subcategory: "basic-acc-docs",
+          examples: [
+            "Příjem zboží - záznam o přijatém zboží na sklad",
+            "Výdej zboží - záznam o vydaném zboží ze skladu"
+          ],
+        },
+        {
+          id: "basic-acc-docs-kp",
+          term: "Kniha pohledávek a závazků",
+          definition: "Záznam o všech pohledávkách a závazcích společnosti.",
+          description: "Kniha pohledávek a závazků slouží k evidenci finančních vztahů společnosti s jejími zákazníky a dodavateli.",
+          category: "basic-acc",
+          subcategory: "basic-acc-docs",
+          examples: [
+            "Pohledávky - částky, které jsou dluženy společnosti jejími zákazníky",
+            "Závazky - částky, které společnost dluží svým dodavatelům"
+          ]
+        },
+        {
+          id: "basic-acc-docs-pod",
+          term: "Podrozvaha",
+          definition: "Záznam o položkách, které nejsou zahrnuty v hlavní knize, ale jsou důležité pro finanční řízení společnosti.",
+          description: "Podrozvaha slouží k evidenci mimořádných a dočasných položek, které mohou ovlivnit finanční situaci společnosti.",
+          category: "basic-acc",
+          subcategory: "basic-acc-docs",
+          examples: [
+            "Mimořádné položky - jednorázové transakce, které nejsou součástí běžného hospodaření",
+            "Dočasné položky - transakce, které budou v budoucnu přeřazeny do hlavní knihy"
+          ],
+        },
+      ]
+    }
+  ],
+}
   ]
 };
 
