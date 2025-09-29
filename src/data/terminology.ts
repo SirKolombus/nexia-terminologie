@@ -50,7 +50,7 @@ export const terminologyData: TerminologyTree = {
         category: "basic-links"
       },
       {
-        id: "Metodika 2025-2026",
+        id: "metodika",
         term: "Metodika 2025-2026",
         definition: "Uložiště všech důležitých podkladů co máme -od interní metodiky, přes šablony až po návody s nástroji.",
         examples: [
@@ -68,11 +68,28 @@ export const terminologyData: TerminologyTree = {
             "Kontrola katastru nemovitostí: https://nahlizenidokn.cuzk.gov.cz/",
           ],
           category: "basic-links"
+        },
+        {
+          id: "law",
+          term: "Zákony a vyhlášky",
+          definition: "Odkazy na nejčastější zákony a vyhlášky používané při auditech",
+          examples: [
+            "Zákon o auditorech: https://www.zakonyprolidi.cz/cs/2009-93",
+            "Zákon o účetnictví: https://www.zakonyprolidi.cz/cs/1991-563",
+            "Občanský zákoník: https://www.zakonyprolidi.cz/cs/2012-89",
+            "Zákon o daních z příjmů: https://www.zakonyprolidi.cz/cs/1992-586",
+            "Zákon o DPH: https://www.zakonyprolidi.cz/cs/2004-235",
+            "Zákon o rezervách pro zjištění základu daně z příjmů: https://www.zakonyprolidi.cz/cs/1992-593",
+            "Vyhláška č. 500/2002 Sb.,...",
+            "Vyhláška č. 501/2002 Sb.,...",
+            "Vyhláška č. 410/2009 Sb.,...",
+          ],
+          category: "basic-links"
         }
       ]
     },
     {
-      id: "contracts",
+      id: "contract",
       name: "Zakázky",
       subcategories: [
         {
@@ -95,11 +112,56 @@ export const terminologyData: TerminologyTree = {
               category: "contracts",
               subcategory: "contract-types"
             }
-          ]
+          ],
         },
       ]
-    }
-  ],
+    },
+    {
+      id: "basic-acc",
+      name: "Účetní minimum", // t
+      subcategories: [
+        {
+        id: "basic-acc-basics",
+        name: "Základní terminologie",
+        entries: [
+          {
+            id: "basic-acc-basics-akt",
+            term: "Aktiva",
+            definition: "Všechna aktiva, která společnost vlastní. Suma aktiv je rovna součtu vlastního kapitálu a pasiv ÚJ.",
+            description: "Aktiva zahrnují hotovost, pohledávky, zásoby, nemovitosti a další majetek.",
+            category: "basic-acc",
+            subcategory: "basic-acc-basics"
+          },
+          {
+            id: "basic-acc-basics-pas",
+            term: "Pasiva",
+            definition: "Všechny závazky a dluhy společnosti.",
+            description: "Pasiva zahrnují půjčky, závazky vůči dodavatelům, daně a další finanční povinnosti. Nedílnou součástí pasiv je i vlastní kapitál.",
+            category: "basic-acc",
+            subcategory: "basic-acc-basics"
+          },
+          {
+            id: "basic-acc-basics-vk",
+            term: "Vlastní kapitál",
+            definition: "Částka, kterou vlastníci investovali do společnosti, plus zisky, které společnost reinvestovala.",
+            description: "Vlastní kapitál zahrnuje základní kapitál, emisní ážio a nerozdělený zisk.",
+            category: "basic-acc",
+            subcategory: "basic-acc-basics"
+          },
+          {
+            id: "basic-acc-basics-zk",
+            term: "Základní kapitál",
+            definition: "Počáteční investice vlastníků do společnosti.",
+            description: "Základní kapitál je uveden v zakladatelské smlouvě nebo stanovách společnosti.",
+            category: "basic-acc",
+            subcategory: "basic-acc-basics"
+          }
+    
+        ],
+      },
+    ],
+  }
+  ]
 };
 
 // Helper functions for searching and filtering
