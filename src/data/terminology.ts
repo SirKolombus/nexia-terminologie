@@ -33,7 +33,7 @@ export interface TerminologyTree {
 // Sample terminology data for financial auditing
 export const terminologyData: TerminologyTree = {
   categories: [
-    {
+    { //důlezžité odkazy na firmě
       id: "basic-links",
       name: "Důležité odkazy",
       entries: [
@@ -88,7 +88,7 @@ export const terminologyData: TerminologyTree = {
         },
       ],
     },
-    {
+    { //doplnit definice auditu, přezkoumání hospodaření + doplnit ISAE 3000 atd.
       id: "contract",
       name: "Zakázky",
       subcategories: [
@@ -116,7 +116,7 @@ export const terminologyData: TerminologyTree = {
         },
       ],
     },
-    {
+    { //Účetní minimum - nevidím důvod rozvíjet o další terminologii...
       id: "basic-acc",
       name: "Účetní minimum", // t
       subcategories: [
@@ -380,7 +380,7 @@ export const terminologyData: TerminologyTree = {
         },
       ],
     },
-    {
+    { // into audit; není hotové
       id: "intro-audit",
       name: "Zásady auditu",
       subcategories: [
@@ -400,6 +400,30 @@ export const terminologyData: TerminologyTree = {
         },
       ],
     },
+    { //zásadní postupy na zakázce = není hotové
+      id: "basics-audit",
+      name: "Základní postupy na zakázce",
+    },
+    { //druhy rizik, standardy a postoj k rizikům - není hotové
+      id: "risks-audit",
+      name: "Rizika",
+    },
+    { //důkaznictví v auditu - není hotové
+      id: "proof-audit",
+      name: "Důkaznictví v auditu",
+    },
+    { //shromažďování auditních důkazů - není hotové
+      id: "gather-audit",
+      name: "Auditní nástroje a techniky",
+    },
+    { //závěr auditu - není hotové
+      id: "final-audit",
+      name: "Finalizace auditu",
+    },
+    { //ostatní doplňkové informace - není hotové
+      id: "extras-audit",
+      name: "Audit - extras",
+    }
   ],
 };
 
