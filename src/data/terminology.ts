@@ -88,7 +88,7 @@ export const terminologyData: TerminologyTree = {
         },
       ],
     },
-    { //doplnit definice auditu, přezkoumání hospodaření + doplnit ISAE 3000 atd.
+    { //doplnit definice doplnit ISAE 3000 atd.
       id: "contract",
       name: "Zakázky",
       subcategories: [
@@ -99,16 +99,16 @@ export const terminologyData: TerminologyTree = {
             {
               id: "basic-audit",
               term: "Audit",
-              definition: "N/A",
-              description: "N/A",
+              definition: "Povinným auditem se rozumí ověření účetní závěrky (konsolidované účetní závěrky), zda podává věrný a poctivý obraz předmětu účetnictví podle příslušného rámce účetního výkaznictví.” (§ 2 pís. a) Zákon o auditorech - 93/2009 Sb.).",
+              description: "Typicky jej vyžaduje zákon o účetnictví, zákon o obchodních korporacích nebo stanovy společnosti. Auditem se rozumí i ověření konsolidované účetní závěrky. Audit může být také na základě smlouvy (tzv. dobrovolný audit).",
               category: "contracts",
               subcategory: "contract-types"
             },
             {
               id: "prezkum",
               term: "Přezkum hospodaření",
-              definition: "N/A",
-              description: "N/A",
+              definition: "Přezkoumávání hospodaření územních samosprávných celků a dobrovolných svazků obcí (dále jen územní celek) či jejich zřízených příspěvkových organizací zahrnuje zkoumání ročního hospodaření uvedeného v závěrečném účtu a dalších vyjmenovaných oblastí.” (§ 1-2 Zákon č. 420/2004 Sb.)",
+              description: "Přezkum hospodaření se zaměřuje na posouzení, zda územní celek hospodaří v souladu s právními předpisy a zda jsou jeho výdaje a příjmy v souladu s rozpočtem. Činnost provádí buď vládní orgán kontroly či externí auditor.",
               category: "contracts",
               subcategory: "contract-types"
             },
