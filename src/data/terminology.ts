@@ -116,7 +116,7 @@ export const terminologyData: TerminologyTree = {
         },
       ],
     },
-    { //Účetní minimum - nevidím důvod rozvíjet o další terminologii... -> dopřidat příklady pro účetní doklady
+    { //Účetní minimum -za mě hotovo
       id: "basic-acc",
       name: "Účetní minimum", // t
       subcategories: [
