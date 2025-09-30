@@ -121,95 +121,95 @@ export const terminologyData: TerminologyTree = {
       name: "Účetní minimum", // t
       subcategories: [
         {
-        id: "basic-acc-basics",
-        name: "Základní terminologie",
-        entries: [
-          {
-            id: "basic-acc-basics-akt",
-            term: "Aktiva",
-            definition: "Všechna aktiva, která společnost vlastní. Suma aktiv je rovna součtu vlastního kapitálu a pasiv ÚJ.",
-            description: "Aktiva zahrnují hotovost, pohledávky, zásoby, nemovitosti a další majetek.",
-            category: "basic-acc",
-            subcategory: "basic-acc-basics"
-          },
-          {
-            id: "basic-acc-basics-pas",
-            term: "Pasiva",
-            definition: "Všechny závazky a dluhy společnosti.",
-            description: "Pasiva zahrnují půjčky, závazky vůči dodavatelům, daně a další finanční povinnosti. Nedílnou součástí pasiv je i vlastní kapitál.",
-            category: "basic-acc",
-            subcategory: "basic-acc-basics"
-          },
-          {
-            id: "basic-acc-basics-vk",
-            term: "Vlastní kapitál",
-            definition: "Částka, kterou vlastníci investovali do společnosti, plus zisky, které společnost reinvestovala.",
-            description: "Vlastní kapitál zahrnuje základní kapitál, emisní ážio a nerozdělený zisk.",
-            category: "basic-acc",
-            subcategory: "basic-acc-basics"
-          },
-          {
-            id: "basic-acc-basics-zk",
-            term: "Základní kapitál",
-            definition: "Počáteční investice vlastníků do společnosti.",
-            description: "Základní kapitál je uveden v zakladatelské smlouvě nebo stanovách společnosti.",
-            category: "basic-acc",
-            subcategory: "basic-acc-basics"
-          },
-          {
-            id: "basic-acc-basics-vn",
-            term: "Výnosy a náklady",
-            definition: "Výnosy představují příjmy společnosti z její hlavní činnosti, zatímco náklady jsou výdaje spojené s provozem společnosti.",
-            description: "Výnosy zahrnují tržby z prodeje zboží nebo služeb, zatímco náklady zahrnují náklady na materiál, mzdy, nájem a další provozní výdaje.",
-            category: "basic-acc",
-            subcategory: "basic-acc-basics"
-          },
-          {
-            id: "basic-acc-basics-bl",
-            term: "Bilanční suma",
-            definition: "Celková hodnota aktiv nebo pasiv společnosti.",
-            description: "Bilanční suma je vždy stejná na straně aktiv i pasiv, což odráží základní účetní rovnost: Aktiva = Pasiva + Vlastní kapitál.",
-            category: "basic-acc",
-            subcategory: "basic-acc-basics"
-          },
-          {
-            id: "basic-acc-basics-uj",
-            term: "Účetní jednotka",
-            definition: "Subjekt, pro který jsou vedeny účetní záznamy - mnohdy používáme při popisování transakce auditované osoby.",
-            description: "Účetní jednotkou může být fyzická osoba, právnická osoba nebo jiný subjekt, který má povinnost vést účetnictví podle zákona.",
-            category: "basic-acc",
-            subcategory: "basic-acc-basics"
-          },
-          {
-            id: "basic-acc-basics-uo",
-            term: "Účetní období",
-            definition: "Časové období, za které jsou sestavovány účetní závěrky.",
-            description: "Účetní období je obvykle jeden rok, ale může být i kratší (např. čtvrtletí nebo pololetí) v závislosti na potřebách účetní jednotky. Účetní období nemusí nutně souhlasit na kalendářní období - v tomto případě hovoříme o hospodářském roce.",
-            category: "basic-acc",
-            subcategory: "basic-acc-basics",
-            examples: [
-              "Kalendářní rok - účetní období od 1. ledna do 31. prosince",
-              "Hospodářský rok - účetní období, které nezačíná 1. ledna a nekončí 31. prosince (např. od 1. dubna do 31. března následujícího roku)",
-              "Účetní období v závislosti na přeměně společnosti - může být kratší či delší než 12 měsíců"
-            ],
-          },
-          {
-            id: "basic-acc-basics-ud",
-            term: "Účetní doklad",
-            definition: "Dokument, který zaznamenává finanční transakci.",
-            description: "Účetní doklad je základním prvkem účetnictví a slouží jako důkaz o provedení transakce. Dělíme na vnitřní (účetní jednotkou vystavené) a vnější (doklady přijaté od jiných ekonomických subjektů).",
-            examples: [
-              "Faktura - doklad o prodeji zboží nebo služeb; dělíme na přijaté a vydané",
-              "Pokladní doklad - doklad o hotovostní transakci; příjmový nebo výdajový",
-              "Bankovní výpis - doklad o transakcích na bankovním účtu ekonomického subjektu",
-              "Interní doklad - doklad vystavený účetní jednotkou pro interní potřeby (např. převod mezi účty, zařazení či vyřazení majetku či oprava účetních zápisů)",
-              "Mzdový list - doklad o mzdových nákladech a odvodech zaměstnanců",
-              "Skladový doklad - doklad o pohybu zásob na skladě (příjem, výdej, převod)"
-            ],
-            category: "basic-acc",
-            subcategory: "basic-acc-basics"
-          },
-        ],
+          id: "basic-acc-basics",
+          name: "Základní terminologie",
+          entries: [
+            {
+              id: "basic-acc-basics-akt",
+              term: "Aktiva",
+              definition: "Všechna aktiva, která společnost vlastní. Suma aktiv je rovna součtu vlastního kapitálu a pasiv ÚJ.",
+              description: "Aktiva zahrnují hotovost, pohledávky, zásoby, nemovitosti a další majetek.",
+              category: "basic-acc",
+              subcategory: "basic-acc-basics"
+            },
+            {
+              id: "basic-acc-basics-pas",
+              term: "Pasiva",
+              definition: "Všechny závazky a dluhy společnosti.",
+              description: "Pasiva zahrnují půjčky, závazky vůči dodavatelům, daně a další finanční povinnosti. Nedílnou součástí pasiv je i vlastní kapitál.",
+              category: "basic-acc",
+              subcategory: "basic-acc-basics"
+            },
+            {
+              id: "basic-acc-basics-vk",
+              term: "Vlastní kapitál",
+              definition: "Částka, kterou vlastníci investovali do společnosti, plus zisky, které společnost reinvestovala.",
+              description: "Vlastní kapitál zahrnuje základní kapitál, emisní ážio a nerozdělený zisk.",
+              category: "basic-acc",
+              subcategory: "basic-acc-basics"
+            },
+            {
+              id: "basic-acc-basics-zk",
+              term: "Základní kapitál",
+              definition: "Počáteční investice vlastníků do společnosti.",
+              description: "Základní kapitál je uveden v zakladatelské smlouvě nebo stanovách společnosti.",
+              category: "basic-acc",
+              subcategory: "basic-acc-basics"
+            },
+            {
+              id: "basic-acc-basics-vn",
+              term: "Výnosy a náklady",
+              definition: "Výnosy představují příjmy společnosti z její hlavní činnosti, zatímco náklady jsou výdaje spojené s provozem společnosti.",
+              description: "Výnosy zahrnují tržby z prodeje zboží nebo služeb, zatímco náklady zahrnují náklady na materiál, mzdy, nájem a další provozní výdaje.",
+              category: "basic-acc",
+              subcategory: "basic-acc-basics"
+            },
+            {
+              id: "basic-acc-basics-bl",
+              term: "Bilanční suma",
+              definition: "Celková hodnota aktiv nebo pasiv společnosti.",
+              description: "Bilanční suma je vždy stejná na straně aktiv i pasiv, což odráží základní účetní rovnost: Aktiva = Pasiva + Vlastní kapitál.",
+              category: "basic-acc",
+              subcategory: "basic-acc-basics"
+            },
+            {
+              id: "basic-acc-basics-uj",
+              term: "Účetní jednotka",
+              definition: "Subjekt, pro který jsou vedeny účetní záznamy - mnohdy používáme při popisování transakce auditované osoby.",
+              description: "Účetní jednotkou může být fyzická osoba, právnická osoba nebo jiný subjekt, který má povinnost vést účetnictví podle zákona.",
+              category: "basic-acc",
+              subcategory: "basic-acc-basics"
+            },
+            {
+              id: "basic-acc-basics-uo",
+              term: "Účetní období",
+              definition: "Časové období, za které jsou sestavovány účetní závěrky.",
+              description: "Účetní období je obvykle jeden rok, ale může být i kratší (např. čtvrtletí nebo pololetí) v závislosti na potřebách účetní jednotky. Účetní období nemusí nutně souhlasit na kalendářní období - v tomto případě hovoříme o hospodářském roce.",
+              category: "basic-acc",
+              subcategory: "basic-acc-basics",
+              examples: [
+                "Kalendářní rok - účetní období od 1. ledna do 31. prosince",
+                "Hospodářský rok - účetní období, které nezačíná 1. ledna a nekončí 31. prosince (např. od 1. dubna do 31. března následujícího roku)",
+                "Účetní období v závislosti na přeměně společnosti - může být kratší či delší než 12 měsíců"
+              ],
+            },
+            {
+              id: "basic-acc-basics-ud",
+              term: "Účetní doklad",
+              definition: "Dokument, který zaznamenává finanční transakci.",
+              description: "Účetní doklad je základním prvkem účetnictví a slouží jako důkaz o provedení transakce. Dělíme na vnitřní (účetní jednotkou vystavené) a vnější (doklady přijaté od jiných ekonomických subjektů).",
+              category: "basic-acc",
+              subcategory: "basic-acc-basics",
+              examples: [
+                "Faktura - doklad o prodeji zboží nebo služeb; dělíme na přijaté a vydané",
+                "Pokladní doklad - doklad o hotovostní transakci; příjmový nebo výdajový",
+                "Bankovní výpis - doklad o transakcích na bankovním účtu ekonomického subjektu",
+                "Interní doklad - doklad vystavený účetní jednotkou pro interní potřeby (např. převod mezi účty, zařazení či vyřazení majetku či oprava účetních zápisů)",
+                "Mzdový list - doklad o mzdových nákladech a odvodech zaměstnanců",
+                "Skladový doklad - doklad o pohybu zásob na skladě (příjem, výdej, převod)"
+              ],
+            },
+          ],
         },
         {  
           id: "basic-acc-vykaz",

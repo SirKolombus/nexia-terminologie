@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
   <Id>f0aa2a0e-63f4-451e-aa92-009e942d861e</Id>
-  <Version>1.0.0.0</Version>
-  <ProviderName>Financial Audit Solutions</ProviderName>
+  <Version>2.1.1.0</Version>
+  <ProviderName>Tomáš Pavlovič</ProviderName>
   <DefaultLocale>cs-CZ</DefaultLocale>
-  <DisplayName DefaultValue="Terminologie - Audit"/>
+  <DisplayName DefaultValue="Slovník pojmů pro audit"/>
   <Description DefaultValue="Profesionální terminologický slovník pro finanční audit s hierarchickým procházením a vyhledáváním."/>
   <IconUrl DefaultValue="https://localhost:3000/assets/icon-32.png"/>
   <HighResolutionIconUrl DefaultValue="https://localhost:3000/assets/icon-64.png"/>

@@ -286,6 +286,7 @@ ul {
     background-color: rgba(0, 0, 0, 0.4);
     display: flex;
     -ms-flex-pack: center;
+    -webkit-justify-content: center;
     justify-content: center;
     -ms-flex-align: center;
     align-items: center;
@@ -307,7 +308,6 @@ ul {
     border-bottom: 1px solid #e1e1e1;
     display: flex;
     -ms-flex-pack: justify;
-    justify-content: space-between;
     -ms-flex-align: start;
     align-items: flex-start;
 }
