@@ -33,7 +33,7 @@ export interface TerminologyTree {
 // Sample terminology data for financial auditing
 export const terminologyData: TerminologyTree = {
   categories: [
-    { //důlezžité odkazy na firmě
+    { //důlezžité odkazy na firmě - cca hotovo
       id: "basic-links",
       name: "Důležité odkazy",
       entries: [
@@ -116,7 +116,7 @@ export const terminologyData: TerminologyTree = {
         },
       ],
     },
-    { //Účetní minimum - nevidím důvod rozvíjet o další terminologii...
+    { //Účetní minimum - nevidím důvod rozvíjet o další terminologii... -> dopřidat příklady pro účetní doklady
       id: "basic-acc",
       name: "Účetní minimum", // t
       subcategories: [
@@ -197,7 +197,15 @@ export const terminologyData: TerminologyTree = {
             id: "basic-acc-basics-ud",
             term: "Účetní doklad",
             definition: "Dokument, který zaznamenává finanční transakci.",
-            description: "Účetní doklad je základním prvkem účetnictví a slouží jako důkaz o provedení transakce.",
+            description: "Účetní doklad je základním prvkem účetnictví a slouží jako důkaz o provedení transakce. Dělíme na vnitřní (účetní jednotkou vystavené) a vnější (doklady přijaté od jiných ekonomických subjektů).",
+            examples: [
+              "Faktura - doklad o prodeji zboží nebo služeb; dělíme na přijaté a vydané",
+              "Pokladní doklad - doklad o hotovostní transakci; příjmový nebo výdajový",
+              "Bankovní výpis - doklad o transakcích na bankovním účtu ekonomického subjektu",
+              "Interní doklad - doklad vystavený účetní jednotkou pro interní potřeby (např. převod mezi účty, zařazení či vyřazení majetku či oprava účetních zápisů)",
+              "Mzdový list - doklad o mzdových nákladech a odvodech zaměstnanců",
+              "Skladový doklad - doklad o pohybu zásob na skladě (příjem, výdej, převod)"
+            ],
             category: "basic-acc",
             subcategory: "basic-acc-basics"
           },
