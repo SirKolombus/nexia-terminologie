@@ -1,0 +1,11 @@
+{
+  "extends": [
+    "development"
+  ],
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not ie <= 10"
+  ]
+}
+// tenhle chuj předstauje ignoraci určitých chyb - teďka se ignoruje chyba kompatibility pro internet explorer < 11
