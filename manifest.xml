@@ -74,7 +74,7 @@
       <bt:ShortStrings>
         <bt:String id="GetStarted.Title" DefaultValue="Vítejte v Terminologii pro audit!"/>
         <bt:String id="CommandsGroup.Label" DefaultValue="Terminologie"/>
-        <bt:String id="TaskpaneButton.Label" DefaultValue="Zobrazit terminologii"/>
+        <bt:String id="TaskpaneButton.Label" DefaultValue="Co to kurwa je?"/>
       </bt:ShortStrings>
       <bt:LongStrings>
         <bt:String id="GetStarted.Description" DefaultValue="Váš terminologický slovník pro finanční audit byl úspěšně načten. Přejděte na kartu DOMŮ a klikněte na tlačítko 'Zobrazit terminologii'."/>
