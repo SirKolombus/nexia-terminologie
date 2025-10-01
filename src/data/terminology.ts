@@ -470,6 +470,28 @@ export const terminologyData: TerminologyTree = {
             }
           ],
         },
+        {
+          id: "risks-audit-standards",
+          name: "Auditní standardy a přístup k rizikům",
+          entries: [
+            {
+              id: "risks-audit-standards-ISA315",
+              term: "ISA 315 - Identifikace a posouzení rizik významné nesprávnosti prostřednictvím pochopení účetní jednotky a jejího prostředí",
+              definition: "Standard, který poskytuje pokyny pro identifikaci a posouzení rizik významné nesprávnosti v účetní závěrce.",
+              description: "ISA 315 vyžaduje, aby auditor získal pochopení účetní jednotky a jejího prostředí, včetně jejího vnitřního kontrolního systému, aby mohl identifikovat a posoudit rizika významné nesprávnosti.",
+              category: "risks-audit",
+              subcategory: "risks-audit-standards"
+            },
+            {
+              id: "risks-audit-standards-ISA330",
+              term: "ISA 330 - Reakce auditora na posouzená rizika",
+              definition: "Standard, který poskytuje pokyny pro reakci auditora na posouzená rizika významné nesprávnosti.",
+              description: "ISA 330 vyžaduje, aby auditor navrhl a provedl auditorské postupy, které jsou vhodné k reakci na posouzená rizika významné nesprávnosti, a aby získal dostatečné a vhodné důkazní informace.",
+              category: "risks-audit",
+              subcategory: "risks-audit-standards"
+            }
+          ]
+        }
       ]
     },
     { //důkaznictví v auditu - není hotové
