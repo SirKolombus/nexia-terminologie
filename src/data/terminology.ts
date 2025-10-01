@@ -420,17 +420,268 @@ export const terminologyData: TerminologyTree = {
       id: "proof-audit",
       name: "Důkaznictví v auditu",
     },
-    { //shromažďování auditních důkazů - není hotové
+    { //shromažďování auditních důkazů - chybí sepsat definice a popisy
       id: "gather-audit",
       name: "Auditní nástroje a techniky",
+      subcategories: [
+        {
+          id: "gather-audit-tech",
+          name: "Techniky zjišťování",
+          entries: [
+            {
+              id: "gather-audit-tech-ask",
+              term: "Dotazování",
+              definition: "N/A",
+              description: "N/A",
+              subcategory: "gather-audit-tech",
+              category: "gather-audit",
+            },
+            {
+              id: "gather-audit-tech-see",
+              term: "Pozorování",
+              definition: "N/A",
+              description: "N/A",
+              subcategory: "gather-audit-tech",
+              category: "gather-audit",
+            },
+            {
+              id: "gather-audit-tech-inspect",
+              term: "Inspekce",
+              definition: "N/A",
+              description: "N/A",
+              subcategory: "gather-audit-tech",
+              category: "gather-audit",
+            },
+            {
+              id: "gather-audit-tech-rep",
+              term: "Reperformance",
+              definition: "N/A",
+              description: "N/A",
+              subcategory: "gather-audit-tech",
+              category: "gather-audit", 
+            },
+            {
+              id: "gather-audit-tech-det",
+              term: "Detialní testování účetních případů",
+              definition: "N/A",
+              description: "N/A",
+              subcategory: "gather-audit-tech",
+              category: "gather-audit",
+            },
+          ],
+        },
+        {
+          id: "gather-audit-sample",
+          name: "Metodika výběru vzorku",
+          entries: [
+            {
+              id: "gather-audit-sample-process",
+              term: "Postup výběru",
+              definition: "N/A",
+              description: "N/A",
+              subcategory: "gather-audit-sample",
+              category: "gather-audit",
+            },
+            {
+              id: "gather-aduit-sample-mat",
+              term: "Stanovení významnosti",
+              definition: "N/A",
+              description: "N/A",
+              subcategory: "gather-audit-sample",
+              category: "gather-audit",
+            },
+            {
+              id: "gather-audit-sample-fs",
+              term: "Faktor spolehlivosti",
+              definition: "N/A",
+              description: "N/A",
+              subcategory: "gather-audit-sample",
+              category: "gather-audit",
+            },
+            {
+              id: "gather-audit-sample-ngc",
+              term: "Metoda náhodného generátoru čísel (NGČ)",
+              definition: "N/A",
+              description: "N/A",
+              subcategory: "gather-audit-sample",
+              category: "gather-audit",
+            },
+            {
+              id: "gather-audit-sample-npp",
+              term: "Metoda náhodné peněžní procházky (NPP)",
+              definition: "N/A",
+              description: "N/A",
+              subcategory: "gather-audit-sample",
+              category: "gather-audit",
+            },
+            {
+              id: "gather-audit-sample-ou",
+              term: "Odborný úsudek",
+              definition: "N/A",
+              description: "N/A",
+              subcategory: "gather-audit-sample",
+              category: "gather-audit",
+            },
+          ]
+        }
+      ],
     },
-    { //závěr auditu - není hotové
+    { //závěr auditu - chybí sepsat definice a popisy
       id: "final-audit",
       name: "Finalizace auditu",
+      subcategories: [
+        {
+          id: "final-audit-report",
+          name: "Kontrola výstupů",
+          entries: [
+            {
+              id: "fnal-audit-report-nacitani",
+              term: "Načítání výkazů",
+              definition: "N/A",
+              description: "N/A",
+              examples: [
+                "N/A - odkaz na Tým_MD :) "
+              ],
+              subcategory: "final-audit-report",
+              category: "final-audit",
+            },
+            {
+              id: "final-audit-report-attvz",
+              term: "Sesouhlasení přílohy a výroční zprávy",
+              definition: "N/A",
+              description: "N/A",
+              subcategory: "final-audit-report",
+              category: "final-audit",
+            },
+            {
+              id: "final-audit-report-doc",
+              term: "Dokumentace kontroly výkazů",
+              definition: "N/A",
+              description: "N/A",
+              subcategory: "final-audit-report",
+              category: "final-audit",
+            }
+          ]
+        },
+        {
+          id: "final-audit-closeup",
+          name: "Závěrečné výstupy",
+          entries: [
+            {
+              id: "final-audit-closeup-ml",
+              term: "Management Letter",
+              definition: "N/A",
+              description: "N/A",
+              subcategory: "final-audit-closeup",
+              category: "final-audit",
+            },
+            {
+              id: "final-audit-closeup-zna",
+              term: "Zpráva nezávislého auditora",
+              definition: "N/A",
+              description: "N/A",
+              subcategory: "final-audit-closeup",
+              category: "final-audit",
+            },
+            {
+              id: "final-audit-closeup-zpza",
+              term: "Zpráva o projednání zprávy auditora",
+              definition: "N/A",
+              description: "N/A",
+              subcategory: "final-audit-closeup",
+              category: "final-audit",
+            }
+          ]
+        },
+        {
+          id: "final-audit-finish",
+          name: "Uzavření zakázky",
+          entries: [
+            {
+              id: "final-audit-finish-rule",
+              term: "Lhůta pro uzavření spisů",
+              definition: "N/A",
+              description: "N/A",
+              subcategory: "final-audit-finish",
+              category: "final-audit",
+            },
+            {
+              id: "final-audit-finish-cwclose",
+              term: "Uzavření spisu v CaseWare",
+              definition: "N/A",
+              description: "N/A",
+              subcategory: "final-audit-finish",
+              category: "final-audit",
+            },
+            {
+              id: "final-audit-finish-shclose",
+              term: "Uzavření spisu na SharePointu",
+              definition: "N/A",
+              description: "N/A",
+              subcategory: "final-audit-finish",
+              category: "final-audit",
+            }
+          ]
+        }
+      ]
     },
     { //ostatní doplňkové informace - není hotové
       id: "extras-audit",
       name: "Audit - extras",
+      subcategories: [
+        {
+          id: "extra-audit-sekce",
+          name: "Sekce - how to?",
+          entries: [
+            {
+              id: "extra-audit-sekce-uvery",
+              term: "Přijaté úvěry a půjčky",
+              definition: "N/A",
+              description: "N/A",
+              subcategory: "extra-audit-sekce",
+              category: "extras-audit",
+            },
+          ]
+        },
+        {
+          id: "extra-audit-docs",
+          name: "Nezbytné dokumenty pro zakázku",
+          entries: [
+            {
+              id: "extra-audit-docs-rrz",
+              term: "Rozhodnutí o rozdělení zisku",
+              definition: "N/A",
+              description: "N/A",
+              subcategory: "extra-audit-docs",
+              category: "extras-audit",
+            },
+            {
+              id: "extra-audit-docs-pv",
+              term: "Prohlášení vedení",
+              definition: "N/A",
+              description: "N/A",
+              subcategory: "extra-audit-docs",
+              category: "extras-audit",
+            },
+            {
+              id: "extra-audit-docs-dp",
+              term: "Dopis vedení",
+              definition: "N/A",
+              description: "N/A",
+              subcategory: "extra-audit-docs",
+              category: "extras-audit",
+            },
+            {
+              id: "extra-audit-docs-di",
+              term: "Dokladová inventura",
+              definition: "N/A",
+              description: "N/A",
+              subcategory: "extra-audit-docs",
+              category: "extras-audit",
+            }
+          ]
+        }
+      ]
     }
   ],
 };
