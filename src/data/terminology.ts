@@ -436,6 +436,38 @@ export const terminologyData: TerminologyTree = {
               category: "risks-audit",
               subcategory: "risks-audit-types"
             },
+            {
+              id: "risks-audit-types-kr",
+              term: "Kontrolní riziko (KR)",
+              definition: "Riziko, že vnitřní kontrolní systém účetní jednotky včas nezabrání nesprávnosti, která by se mohla vyskytnout u tvrzení týkajícího se skupiny transakcí, zůstatku účtů nebo zveřejněného údaje a která by mohla být buď sama o sobě, nebo spolu s jinými nesprávnostmi významná , resp. že vnitřní kontrolní sstém takovou nesprávnost včas neodhalí  neopraví.",
+              description: "Pravděpodobnost, že vnitřní kontroly účetní jednotky nezabrání nebo neodhalí a neopraví významnou nesprávnost na úrovni tvrzení.",
+              examples: [
+                "Pokud má účetní jednotka sice zavedené kontroly, ale auditor je nepovažuje za relevantní, KR se stanoví jako vysoké.",
+                "Každá kontrola by měla reagovat na konkrétní riziko. Pokud riziko nesnižuje, je z hlediska auditu neúčinná a nezohledňuje se."
+              ],
+              category: "risks-audit",
+              subcategory: "risks-audit-types-kr"
+            },
+            {
+              id: "risks-audit-types-zr",
+              term: "Zjišťovací riziko (ZR)",
+              definition: "Riziko, že auditorské postupy neodhalí existující významnou nesprávnost, a to ani jednotlivě, ani v souhrnu s jinými nesprávnostmi. Zjišťovací riziko je inverzní k riziku významné nesprávnosti (RMM = PR × KR).",
+              description: "Zjišťovací riziko představuje pravděpodobnost selhání auditorských postupů při odhalení významné nesprávnosti. Čím nižší je RMM (kombinace přirozeného a kontrolního rizika), tím vyšší úroveň ZR si může auditor dovolit. Naopak, vyšší RMM znamená, že ZR musí být nízké, a tedy je třeba získat přesvědčivější důkazní informace. V kontextu výběru vzorků pro testy věcné správnosti platí, že nižší ZR (tj. vyšší RMM) vede k vyššímu faktoru spolehlivosti a tím i k větší velikosti vzorku. Zjišťovací riziko se také označuje jako detekční riziko a může zahrnovat i riziko chybně navrženého auditu, nesprávného porozumění podnikání klienta nebo nevhodně zvolených testovacích postupů",
+              category: "risks-audit",
+              subcategory: "risks-audit-types"
+            },
+            {
+              id: "risks-audit-types-rmm",
+              term: "Riziko materiální nesprávnosti (RMM)",
+              definition: "Riziko významné nesprávnosti je kombinací přirozeného rizika a kontrolního rizika (PRxKR). (Jestliže se nechystáme testovat provozní účinnost kontrol, je kontrolní riziko vyhodnoceno tak, že riziko materiální nesprávnosti je stejné jako přirozené riziko.)",
+              examples: [
+                "KR vysoké x PR vysoké = RMM vysoké | KR vysoké x PR střední = RMM střední | KR vysoké x PR nízké = RMM střední",
+                "KR střední x PR vysoké = RMM střední | KR střední x PR střední = RMM střední | KR střední x PR nízké = RMM nízké",
+                "KR nízké x PR vysoké = RMM střední | KR nízké x PR střední = RMM nízké | KR nízké x PR nízké = RMM nízké"
+              ],
+              category: "risks-audit",
+              subcategory: "risks-audit-types"
+            }
           ],
         },
       ]
