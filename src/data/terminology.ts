@@ -625,7 +625,7 @@ export const terminologyData: TerminologyTree = {
         }
       ]
     },
-    { //ostatní doplňkové informace - není hotové
+    { //ostatní doplňkové informace - chybí dopsat definice + příkaldy na jednotlivé sekce
       id: "extras-audit",
       name: "Audit - extras",
       subcategories: [
@@ -677,6 +677,62 @@ export const terminologyData: TerminologyTree = {
               definition: "N/A",
               description: "N/A",
               subcategory: "extra-audit-docs",
+              category: "extras-audit",
+            }
+          ]
+        },
+        {
+          id: "extra-audit-targer",
+          name: "Co se zkoumá?",
+          entries: [
+            {
+              id: "extra-audit-target-souladNV",
+              term: "Soulad Časový soulad nákladů a výnosů",
+              definition: "N/A",
+              description: "N/A",
+              subcategory: "extra-audit-targer",
+              category: "extras-audit",
+            },
+            {
+              id: "extra-audit-target-obraz",
+              term: "Věrný a poctivý obraz",
+              definition: "N/A",
+              description: "N/A",
+              subcategory: "extra-audit-targer",
+              category: "extras-audit",
+            },
+            {
+              id: "extra-audit-target-prh",
+              term: "Péče řádného hospodáře",
+              definition: "N/A",
+              description: "N/A",
+              subcategory: "extra-audit-targer",
+              category: "extras-audit",
+            }
+          ]
+        },
+        {
+          id: "extra-audit-aml",
+          name: "AML",
+          entries: [
+            {
+              id: "extra-audit-aml-linkes",
+              term: "Odkazy související s AML",
+              definition: "N/A",
+              description: "N/A",
+
+              examples: [
+                "odkaz na někam"
+              ],
+              subcategory: "extra-audit-aml",
+              category: "extras-audit",
+            },
+            {
+              id: "extra-audit-aml-definice",
+              term: "AML - definice",
+              definition: "N/A",
+              description: "N/A",
+              subcategory: "extra-audit-aml",
               category: "extras-audit",
             }
           ]
