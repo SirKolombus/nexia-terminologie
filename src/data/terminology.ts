@@ -415,6 +415,30 @@ export const terminologyData: TerminologyTree = {
     { //druhy rizik, standardy a postoj k rizikům - není hotové
       id: "risks-audit",
       name: "Rizika",
+      subcategories: [
+        {
+          id: "risks-audit-types",
+          name: "Druhy rizik",
+          entries:[
+            {
+              id: "risks-audit-types-audit",
+              term: "Auditorské riziko",
+              definition: "Riziko, že auditor vydá k účetní závěrce, která je významně (materiálně) zkreslená, nesprávný výrok.",
+              description: "Auditorské riziko je funkcí rizika materiální nesprávnosti (RMM = PR x KR) a zjišťovacího rizika (ZR)",
+              category: "risks-audit",
+              subcategory: "risks-audit-types"
+            },
+            {
+              id: "risks-audit-types-pr",
+              term: "Přirozené riziko (PR)",
+              definition: "Náchylnost určitého tvrzení týkajícího se skupiny transakcí, zůstatku účtu nebo zveřejněného údaje k nesprávnosti, která by při nezohlednění souvisejících kontrol mohla být buď sama o sobě, nebo spolu s jinými nesprávnostmi významná (materiální)",
+              description: "Při určování významného rizika se nepřihlíží k souvisejícim kontrolám, tj. vychází se pouze z přirozeného rizika (nezohledňujícího související vnitřní kontroly).  Pro účely posouzení významného rizika je nutné oddělit přirozené riziko od zavedených vnitřních kontrol.",
+              category: "risks-audit",
+              subcategory: "risks-audit-types"
+            },
+          ],
+        },
+      ]
     },
     { //důkaznictví v auditu - není hotové
       id: "proof-audit",
