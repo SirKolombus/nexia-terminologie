@@ -390,11 +390,11 @@ export const terminologyData: TerminologyTree = {
     },
     { // into audit; není hotové
       id: "intro-audit",
-      name: "Zásady auditu",
+      name: "Standardy (ISA) auditu a jeho zásady",
       subcategories: [
         {
           id: "intro-audit-rules",
-          name: "Auditní rámec a standardy",
+          name: "Auditní standardy (ISA)",
           entries: [
             {
               id: "intro-audit-rules-ISA",
@@ -404,6 +404,178 @@ export const terminologyData: TerminologyTree = {
               category: "intro-audit",
               subcategory: "intro-audit-rules"
             },
+
+            {
+              id: "intro-audit-rules-isa200",
+              term: "ISA 200 - Cíle a zásady auditu finančních výkazů",
+              definition: "Stanovuje cíle a obecné zásady nezávislého auditora při provádění auditu účetní závěrky.",
+              description: "Určuje celkový cíl auditora: získat přiměřenou jistotu, že účetní závěrka neobsahuje významné nesprávnosti, a vydat výrok. Popisuje etické požadavky, profesní skepticismus a úsudek, dostatečné a vhodné důkazní informace a celkový rámec auditu.",
+              examples: [
+                "využití profesního úsudku",
+                "uplatnění skepticismu při analýze neobvyklých transakcí",
+                "zajištění souladu s etickým kodexem"
+              ],
+              category: "intro-audit",
+              subcategory: "intro-audit-rules"
+            },
+            {
+              id: "intro-audit-rules-isa230",
+              term: "ISA 230 - Dokumentace auditu",
+              definition: "Stanovuje požadavky na dokumentaci auditu a poskytuje pokyny pro její přípravu.",
+              description: "Požaduje, aby auditor vyhotovil včasnou, úplnou a dostatečnou dokumentaci o provedených postupech, získaných důkazech a dosažených závěrech. Dokumentace musí umožnit zkušenému auditorovi porozumět průběhu auditu a odůvodnění auditorových úsudků.",
+              examples: [
+                "dokumentace plánování auditu",
+                "záznamy o provedených testech",
+                "komunikace se zaměstnanci",
+                "poznámky k nápravě chyb ze strany klienta",
+                "zpráva o zjištěních auditu"
+              ],
+              category: "intro-audit",
+              subcategory: "intro-audit-rules"
+            },
+            {
+              id: "intro-audit-rules-isa240",
+              term: "ISA 240 - Postupy auditorů související s podvody při auditu účetní závěrky",
+              definition: "Řeší odpovědnost auditora při zohlednění podvodu.",
+              description: "Stanovuje, že auditor musí zvažovat riziko podvodu při auditu, zejména u výnosů a řízení vedením. Vyžaduje postupy k odhalení podvodu, včetně analytických testů, rozhovorů s vedením a hodnocení neobvyklých transakcí. Auditor musí reagovat profesionálním skepticismem.",
+              examples: [
+                "Testování výnosů na konci období",
+                "Analýza neobvyklých převodů",
+                "Rozhovory o kontrolách proti podvodu"
+              ],
+              category: "intro-audit",
+              subcategory: "intro-audit-rules"
+            },
+            {
+              id: "intro-audit-rules-315",
+              term: "ISA 315 - Identifikace a posouzení rizik významné nesprávnosti prostřednictvím pochopení účetní jednotky a jejího prostředí",
+              definition: "ISA 315 ukládá auditorovi povinnost porozumět účetní jednotce, jejímu prostředí a systému vnitřní kontroly. Cílem je identifikovat a vyhodnotit rizika významných nesprávností v účetní závěrce na úrovni celku i jednotlivých tvrzení a tím zaměřit audit na nejrizikovější oblasti.",
+              description: "Standard vytváří základ pro plánování postupů podle ISA 330. Auditor získává přehled o odvětví, povaze a strategii jednotky, rizicích podnikání, účetních procesech a IT prostředí. Posuzuje pět složek vnitřní kontroly: kontrolní prostředí, řízení rizik, informační systém, kontrolní činnosti a monitoring. K tomu využívá dotazy, analytické postupy, pozorování a inspekci dokumentů. Výsledkem je identifikace a vyhodnocení rizik, včetně určení významných rizik, a jejich propojení na konkrétní tvrzení v účetní závěrce. Auditor tato zjištění dokumentuje jako podklad pro další auditní kroky.",
+              examples: [
+                "regulatorní změna → riziko chybné klasifikace aktiv",
+                "expanze na nový trh → riziko podhodnocení rezerv",
+                "nový ERP systém → riziko neúplného přenosu dat",
+                "slabé oddělení povinností → riziko neoprávněných transakcí",
+                "odhad impairmentu goodwillu → významné riziko",
+                "https://www.kacr.cz/file/6637/isa-315r-cz-final-20102021.pdf"
+              ],
+              category: "intro-audit",
+              subcategory: "intro-audit-rules"            
+            },
+            {
+              id: "intro-audit-rules-ISA330",
+              term: "ISA 330 - Reakce auditora na posouzená rizika",
+              definition: "ISA 330 ukládá auditorovi povinnost navrhnout a provést vhodné postupy v reakci na rizika významných nesprávností identifikovaná podle ISA 315. Cílem je získat dostatečné a vhodné důkazní informace, že účetní závěrka neobsahuje významné nesprávnosti.",
+              description: "Na základě vyhodnocených rizik auditor určuje povahu, načasování a rozsah svých postupů. Musí reagovat na rizika na úrovni účetní závěrky i na úrovni tvrzení. U významných rizik provádí specifické a často rozsáhlejší testy. Pokud chce spoléhat na účinnost vnitřních kontrol, musí testovat jejich fungování. Vždy provádí také postupy podrobného testování nebo analytické postupy, aby získal dostatečné důkazy. Auditor následně vyhodnocuje, zda získané důkazy odpovídají zjištěným rizikům a zda je potřeba rozšířit testování.",
+              examples: [
+                "riziko manipulace s výnosy → detailní testy transakcí a cut-off testy",
+                "riziko podhodnocení rezerv → přezkum výpočtů, potvrzení od třetích stran",
+                "spoléhání na IT kontroly → testování přístupových práv a logů systému",
+                "významná rizika (např. goodwill) → použití experta, ověřování vstupních dat a modelů",
+                "https://www.kacr.cz/file/3973/isa-330.pdf"
+              ],
+              category: "intro-audit",
+              subcategory: "intro-audit-rules"
+            },
+            {
+              id: "intro-audit-rules-isa500",
+              term: "ISA 500 - Důkazní informace",
+              definition: "Řeší povahu a zdroje důkazů a jejich dostatečnost a vhodnost.",
+              description: "Požaduje, aby auditor získal dostatečné a vhodné důkazní informace podporující jeho závěr. Rozlišuje mezi spolehlivostí a relevancí důkazů a zdůrazňuje význam kombinace různých zdrojů důkazů.",
+              examples: [
+                "Externí potvrzení z banky",
+                "Fyzická inventura",
+                "Přezkum smluv"
+              ],
+              category: "intro-audit",
+              subcategory: "intro-audit-rules"
+            },
+            {
+              id: "intro-audit-rules-isa520",
+              term: "ISA 520 - Analytické postupy",
+              definition: "Stanovuje použití analytických postupů při auditu",
+              description: "Vyžaduje využití analytických postupů při plánování a při celkovém vyhodnocení závěrky. Popisuje, jak porovnání dat, trendů a poměrů pomáhá identifikovat rizikové oblasti nebo potvrdit jiné důkazy.",
+              examples: [
+                "Porovnání marží meziroční",
+                "Analýza trendu pohledávek",
+                "Poměrová analýza likvidity"
+              ],
+              category: "intro-audit",
+              subcategory: "intro-audit-rules"
+            },
+            {
+              id: "intro-audit-rules-isa540",
+              term: "ISA 540 - Audit účetních odhadů",
+              definition: "Řeší audit účetních odhadů a souvisejících zveřejnění.",
+              description: "Požaduje, aby auditor vyhodnotil rizika u účetních odhadů, včetně odhadů fair value a rezerv. Musí prověřit metody, data a předpoklady použité vedením a v případě složitých odhadů zvážit využití experta.",
+              examples: [
+                "Testování rezerv na soudní spory",
+                "Ověřování modelu pro impairment goodwillu",
+                "Přezkum předpokladů při ocenění derivátů"
+              ],
+              category: "intro-audit",
+              subcategory: "intro-audit-rules"
+            },
+            {
+              id: "intro-audit-rules-isa570",
+              term: "ISA 570 - Going concern",
+              definition: "Řeší odpovědnost auditora při posuzování schopnosti jednotky pokračovat jako going concern.",
+              description: "Auditor musí vyhodnotit, zda existují významné nejistoty ohledně schopnosti účetní jednotky pokračovat v činnosti. Pokud ano, musí posoudit adekvátnost zveřejnění a zvážit úpravu výroku.",
+              examples: [
+                "Analýza cash flow",
+                "Hodnocení refinancování úvěrů",
+                "Hodnocení obchodního plánu",
+                "Hodnocení přehledu zakázek/uhrazenost vydaných zálohových faktur",
+                "Hodnocení knihy závazků s důraz na potencionální soudní spory",
+                "Zkoumání plánů vedení na řešení ztrát"
+              ],
+              category: "intro-audit",
+              subcategory: "intro-audit-rules"
+            },
+            {
+              id: "intro-audit-rules-isa700",
+              term: "ISA 700 - Utvoření názoru na účetní závěrku a sestavení zprávy nezávislého auditora",
+              definition: "Řeší tvorbu výroku auditora k účetní závěrce.",
+              description: "Popisuje, jak auditor formuluje výrok, zda účetní závěrka podává věrný a poctivý obraz. Stanovuje strukturu zprávy auditora, včetně povinných částí (základ pro výrok, odpovědnosti vedení, odpovědnosti auditora).",
+              examples: [
+                "Nemodifikovaný výrok - tj. nebyla zjištěna závažnost zpochybňující správnost výkaznictví",
+                "Modifikovaný výrok - výrok s výhradou - auditor došel k závěru, že účetní závěrka jako celek obsahuje určité závažné nedostatky, které však nejsou natolik závažné, aby ovlivnily věrný a poctivý obraz.",
+                "Modifikovaný výrok - záporný výrok - auditor došel k závěru, že účetní závěrka jako celek obsahuje natolik závažné nedostatky, že neposkytuje věrný a poctivý obraz.",
+                "Odmítnutí výroku - služba auditu na účetní jednotce je vnímána natolik rizikově, že auditor nemůže získat dostatečné a vhodné důkazní informace. Auditor může odmítnout výrok i v případě nesoučinosti auditované osoby."
+              ],
+              category: "intro-audit",
+              subcategory: "intro-audit-rules"
+            }
+          ],
+        },
+        {
+          id: "intro-audit-principles",
+          name: "Zásady auditu",
+          entries: [
+            {
+              id: "intro-audit-principles-independence",
+              term: "Nezávislost",
+              definition: "Schopnost auditora jednat objektivně a nestranně bez vlivu vnějších tlaků.",
+              description: "Nezávislost je klíčová pro důvěryhodnost auditu. Auditor musí být nezávislý jak ve skutečnosti, tak i ve vnímání třetích stran. To zahrnuje vyhýbání se konfliktům zájmů a dodržování etických standardů.",
+              category: "intro-audit",
+              subcategory: "intro-audit-principles"
+            },
+            {
+              id: "intro-audit-principles-professional-skepticism",
+              term: "Profesní skepticismus",
+              definition: "Postoj, který zahrnuje kritické myšlení a neustálé zpochybňování důkazů.",
+              description: "Auditor by měl vždy přistupovat k auditu s otevřenou myslí, být ostražitý vůči možným nesrovnalostem a nepřijímat informace bez dostatečného ověření. Profesní skepticismus pomáhá odhalit potenciální podvody nebo chyby.",
+              category: "intro-audit",
+              subcategory: "intro-audit-principles"
+            },
+            {
+              id: "intro-audit-principles-professional-judgment",
+              term: "Profesní úsudek",
+              definition: "Schopnost auditora aplikovat své znalosti, zkušenosti a dovednosti při rozhodování během auditu.",
+              description: "Profesní úsudek je nezbytný pro posouzení rizik, výběr auditních postupů a interpretaci důkazů. Auditor musí být schopen zvážit různé faktory a učinit informovaná rozhodnutí, která ovlivní kvalitu auditu.",
+              category: "intro-audit",
+              subcategory: "intro-audit-principles"
+            }
           ],
         },
       ],
@@ -477,16 +649,31 @@ export const terminologyData: TerminologyTree = {
             {
               id: "risks-audit-standards-ISA315",
               term: "ISA 315 - Identifikace a posouzení rizik významné nesprávnosti prostřednictvím pochopení účetní jednotky a jejího prostředí",
-              definition: "Standard, který poskytuje pokyny pro identifikaci a posouzení rizik významné nesprávnosti v účetní závěrce.",
-              description: "ISA 315 vyžaduje, aby auditor získal pochopení účetní jednotky a jejího prostředí, včetně jejího vnitřního kontrolního systému, aby mohl identifikovat a posoudit rizika významné nesprávnosti.",
+              definition: "ISA 315 ukládá auditorovi povinnost porozumět účetní jednotce, jejímu prostředí a systému vnitřní kontroly. Cílem je identifikovat a vyhodnotit rizika významných nesprávností v účetní závěrce na úrovni celku i jednotlivých tvrzení a tím zaměřit audit na nejrizikovější oblasti.",
+              description: "Standard vytváří základ pro plánování postupů podle ISA 330. Auditor získává přehled o odvětví, povaze a strategii jednotky, rizicích podnikání, účetních procesech a IT prostředí. Posuzuje pět složek vnitřní kontroly: kontrolní prostředí, řízení rizik, informační systém, kontrolní činnosti a monitoring. K tomu využívá dotazy, analytické postupy, pozorování a inspekci dokumentů. Výsledkem je identifikace a vyhodnocení rizik, včetně určení významných rizik, a jejich propojení na konkrétní tvrzení v účetní závěrce. Auditor tato zjištění dokumentuje jako podklad pro další auditní kroky.",
+              examples: [
+                "regulatorní změna → riziko chybné klasifikace aktiv",
+                "expanze na nový trh → riziko podhodnocení rezerv",
+                "nový ERP systém → riziko neúplného přenosu dat",
+                "slabé oddělení povinností → riziko neoprávněných transakcí",
+                "odhad impairmentu goodwillu → významné riziko",
+                "https://www.kacr.cz/file/6637/isa-315r-cz-final-20102021.pdf"
+              ],
               category: "risks-audit",
               subcategory: "risks-audit-standards"
             },
             {
               id: "risks-audit-standards-ISA330",
               term: "ISA 330 - Reakce auditora na posouzená rizika",
-              definition: "Standard, který poskytuje pokyny pro reakci auditora na posouzená rizika významné nesprávnosti.",
-              description: "ISA 330 vyžaduje, aby auditor navrhl a provedl auditorské postupy, které jsou vhodné k reakci na posouzená rizika významné nesprávnosti, a aby získal dostatečné a vhodné důkazní informace.",
+              definition: "ISA 330 ukládá auditorovi povinnost navrhnout a provést vhodné postupy v reakci na rizika významných nesprávností identifikovaná podle ISA 315. Cílem je získat dostatečné a vhodné důkazní informace, že účetní závěrka neobsahuje významné nesprávnosti.",
+              description: "Na základě vyhodnocených rizik auditor určuje povahu, načasování a rozsah svých postupů. Musí reagovat na rizika na úrovni účetní závěrky i na úrovni tvrzení. U významných rizik provádí specifické a často rozsáhlejší testy. Pokud chce spoléhat na účinnost vnitřních kontrol, musí testovat jejich fungování. Vždy provádí také postupy podrobného testování nebo analytické postupy, aby získal dostatečné důkazy. Auditor následně vyhodnocuje, zda získané důkazy odpovídají zjištěným rizikům a zda je potřeba rozšířit testování.",
+              examples: [
+                "riziko manipulace s výnosy → detailní testy transakcí a cut-off testy",
+                "riziko podhodnocení rezerv → přezkum výpočtů, potvrzení od třetích stran",
+                "spoléhání na IT kontroly → testování přístupových práv a logů systému",
+                "významná rizika (např. goodwill) → použití experta, ověřování vstupních dat a modelů",
+                "https://www.kacr.cz/file/3973/isa-330.pdf"
+              ],
               category: "risks-audit",
               subcategory: "risks-audit-standards"
             }
