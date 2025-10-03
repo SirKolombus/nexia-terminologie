@@ -66,6 +66,7 @@ export const terminologyData: TerminologyTree = {
             "Kontrola subjektů: https://ares.gov.cz/",
             "Kontrola právnických osob: https://or.justice.cz/ias/ui/rejstrik",
             "Kontrola katastru nemovitostí: https://nahlizenidokn.cuzk.gov.cz/",
+            "Kontrola skutečných majitelů: https://esm.justice.cz/ias/issm/rejstrik" 
           ],
           category: "basic-links"
         },
@@ -80,9 +81,9 @@ export const terminologyData: TerminologyTree = {
             "Zákon o daních z příjmů: https://www.zakonyprolidi.cz/cs/1992-586",
             "Zákon o DPH: https://www.zakonyprolidi.cz/cs/2004-235",
             "Zákon o rezervách pro zjištění základu daně z příjmů: https://www.zakonyprolidi.cz/cs/1992-593",
-            "Vyhláška č. 500/2002 Sb.,...",
-            "Vyhláška č. 501/2002 Sb.,...",
-            "Vyhláška č. 410/2009 Sb.,...",
+            "Vyhláška č. 500/2002 Sb.: https://www.zakonyprolidi.cz/cs/2002-500",
+            "Vyhláška č. 501/2002 Sb.: https://www.zakonyprolidi.cz/cs/2002-501",
+            "Vyhláška č. 410/2009 Sb.: https://www.zakonyprolidi.cz/cs/2009-410",
           ],
           category: "basic-links"
         },
