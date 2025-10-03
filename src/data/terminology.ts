@@ -400,7 +400,7 @@ export const terminologyData: TerminologyTree = {
               id: "intro-audit-rules-ISA",
               term: "Mezinárodní auditorské standardy (ISA)",
               definition: "Soubor standardů pro provádění auditů finančních výkazů.",
-              description: "ISA poskytují rámec pro plánování, provádění a dokumentaci auditu, aby bylo zajištěno, že audit je proveden v souladu s nejlepšími praktikami a etickými normami.",
+              description: "ISA poskytují rámec pro plánování, provádění a dokumentaci auditu, aby bylo zajištěno, že audit je proveden v souladu s nejlepšími praktikami a etickými normami. https://www.kacr.cz/aktualni-auditorske-standardy",
               category: "intro-audit",
               subcategory: "intro-audit-rules"
             },
@@ -413,7 +413,8 @@ export const terminologyData: TerminologyTree = {
               examples: [
                 "využití profesního úsudku",
                 "uplatnění skepticismu při analýze neobvyklých transakcí",
-                "zajištění souladu s etickým kodexem"
+                "zajištění souladu s etickým kodexem",
+                "https://www.kacr.cz/file/5315/isa-200.pdf"
               ],
               category: "intro-audit",
               subcategory: "intro-audit-rules"
@@ -428,7 +429,8 @@ export const terminologyData: TerminologyTree = {
                 "záznamy o provedených testech",
                 "komunikace se zaměstnanci",
                 "poznámky k nápravě chyb ze strany klienta",
-                "zpráva o zjištěních auditu"
+                "zpráva o zjištěních auditu",
+                "https://www.kacr.cz/file/5653/isa-230.pdf"
               ],
               category: "intro-audit",
               subcategory: "intro-audit-rules"
@@ -441,7 +443,8 @@ export const terminologyData: TerminologyTree = {
               examples: [
                 "Testování výnosů na konci období",
                 "Analýza neobvyklých převodů",
-                "Rozhovory o kontrolách proti podvodu"
+                "Rozhovory o kontrolách proti podvodu",
+                "https://www.kacr.cz/file/3970/isa-240.pdf"
               ],
               category: "intro-audit",
               subcategory: "intro-audit-rules"
@@ -485,7 +488,8 @@ export const terminologyData: TerminologyTree = {
               examples: [
                 "Externí potvrzení z banky",
                 "Fyzická inventura",
-                "Přezkum smluv"
+                "Přezkum smluv",
+                "https://www.kacr.cz/file/3975/isa-500.pdf"
               ],
               category: "intro-audit",
               subcategory: "intro-audit-rules"
@@ -498,7 +502,8 @@ export const terminologyData: TerminologyTree = {
               examples: [
                 "Porovnání marží meziroční",
                 "Analýza trendu pohledávek",
-                "Poměrová analýza likvidity"
+                "Poměrová analýza likvidity",
+                "https://www.kacr.cz/data/Metodika/Auditing/ISA/ISA520.pdf"
               ],
               category: "intro-audit",
               subcategory: "intro-audit-rules"
@@ -511,7 +516,8 @@ export const terminologyData: TerminologyTree = {
               examples: [
                 "Testování rezerv na soudní spory",
                 "Ověřování modelu pro impairment goodwillu",
-                "Přezkum předpokladů při ocenění derivátů"
+                "Přezkum předpokladů při ocenění derivátů",
+                "https://www.kacr.cz/file/5660/isa-540.pdf"
               ],
               category: "intro-audit",
               subcategory: "intro-audit-rules"
@@ -527,7 +533,8 @@ export const terminologyData: TerminologyTree = {
                 "Hodnocení obchodního plánu",
                 "Hodnocení přehledu zakázek/uhrazenost vydaných zálohových faktur",
                 "Hodnocení knihy závazků s důraz na potencionální soudní spory",
-                "Zkoumání plánů vedení na řešení ztrát"
+                "Zkoumání plánů vedení na řešení ztrát",
+                "https://www.kacr.cz/file/3983/isa-570.pdf"
               ],
               category: "intro-audit",
               subcategory: "intro-audit-rules"
@@ -541,7 +548,8 @@ export const terminologyData: TerminologyTree = {
                 "Nemodifikovaný výrok - tj. nebyla zjištěna závažnost zpochybňující správnost výkaznictví",
                 "Modifikovaný výrok - výrok s výhradou - auditor došel k závěru, že účetní závěrka jako celek obsahuje určité závažné nedostatky, které však nejsou natolik závažné, aby ovlivnily věrný a poctivý obraz.",
                 "Modifikovaný výrok - záporný výrok - auditor došel k závěru, že účetní závěrka jako celek obsahuje natolik závažné nedostatky, že neposkytuje věrný a poctivý obraz.",
-                "Odmítnutí výroku - služba auditu na účetní jednotce je vnímána natolik rizikově, že auditor nemůže získat dostatečné a vhodné důkazní informace. Auditor může odmítnout výrok i v případě nesoučinosti auditované osoby."
+                "Odmítnutí výroku - služba auditu na účetní jednotce je vnímána natolik rizikově, že auditor nemůže získat dostatečné a vhodné důkazní informace. Auditor může odmítnout výrok i v případě nesoučinosti auditované osoby.",
+                "https://www.kacr.cz/file/5151/isa-700-revised.pdf"
               ],
               category: "intro-audit",
               subcategory: "intro-audit-rules"
